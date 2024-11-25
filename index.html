@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Like Hell</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  </head>
+  <body>
+     <div class="container text-center my-5 ">
+    <p class="book">BookMarker</p>
+    <h3 class=" keyword"> <span class="one">Bookmark </span> <span class="two"> your</span> <span class="three">favor<span class="five">ite</span>  </span>  <span class="four">sites </span>   </h3>
+    <div class="father" >
+      <div id="form">
+        <p class="text-start mt-5 h6 fw-bold"><i class="fa-solid fa-book"></i> &nbsp; Site Name</p>
+        <input type="text" class="form-control" placeholder="Bookmark Name" id="siteName" oninput="validateAllInput(this)">
+        <p class="text-start mt-4 h6 fw-bold"><i class="fa-solid fa-link"></i> &nbsp; Site URL      </p>
+        <input type="url" class="form-control" placeholder="Website URL" id="siteUrl" oninput="validateAllInput(this)">
+        <button class="mt-4 btn btn-submit px-5 " id="Submit">Submit</button>
+      </div>
+      <div class="hr2"></div>
+      <div>
+        <table class=" w-100 my-5 bg-white ">
+          <thead>
+            <tr>
+              <th	>index	</th>
+              <th >Website Name	</th>
+              <th >Visit</th>
+              <th >Delete</th>
+            </tr>
+          </thead>
+          <tbody id="car">
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+    
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+      <!-- <div class="crud">
+    <div class="head">
+        <h2>crud</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div class="inputs">
+      <input type="text" id="title" placeholder="title">
+      <div class="price">
+        <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+        <input onkeyup="getTotal()" type="number" placeholder="takes" id="takes">
+        <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
+        <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+        <small id="total"></small>
+      </div>
+      <input type="number" id="count" placeholder="count">
+      <input type="text" id="category" placeholder="category">
+        <button id="Submit">Create</button>
+      </div>
+    <div class="outputs">
+        <div class="searchBlock">
+          <input type="text" id="search" placeholder="search">
+           <div class="btnSearch">
+               <button id="searchTitle">Search By Title</button>
+               <button id="searchCategory">Search By Category</button>
+           </div>
+        </div> 
+        <table >
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="my-tbody">
+            
+          </tbody>
+        </table>
+    </div>
+   </div>   -->
+   <template id="my-template">
+    <swal-title>
+      Save changes to "Untitled 1" before closing?
+    </swal-title>
+    <swal-icon type="warning" color="red"></swal-icon>
+    <swal-button type="confirm">
+      Save As
+    </swal-button>
+    <swal-button type="cancel">
+      Cancel
+    </swal-button>
+    <swal-button type="deny">
+      Close without Saving
+    </swal-button>
+    <swal-param name="allowEscapeKey" value="false" />
+    <swal-param
+      name="customClass"
+      value='{ "popup": "my-popup" }' />
+    <swal-function-param
+      name="didOpen"
+      value="popup => console.log(popup)" />
+  </template>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <script src="js/index.js"></script>
+  </body>
+</html>
